@@ -1,0 +1,516 @@
+* {
+    transition: all .1s;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Ubuntu"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/ubuntu.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/ubuntu.woff") format("woff");
+}
+body {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    color: #444;
+}
+h1 {
+    font: 32px 'Ubuntu', sans-serif;
+    COLOR: #444;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    text-indent: 0;
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+/*              */
+/* Верхнее меню */
+/*              */
+.cmenu_ico {
+    /* border: 1px solid red; */
+    z-index: 10;
+    display: none;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.hat {    
+    position: relative;    
+}
+.myheader { 
+    height: 60px;
+    position: relative;  
+    align-items: center;
+    display: flex;
+    margin: 0 5%;
+}
+.myheader a {
+    text-decoration: none;
+}
+.menu, .prof_btn {
+    display: inline-block;
+    margin: 0 auto;
+}
+.menu {
+    /* border: 1px solid red; */
+}
+.menu ul{
+    padding: 0;
+}
+.menu li {
+    display: inline;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+}
+.menu li:hover {
+    border: 1px solid #99cc00;
+    transition: 0.2s
+}
+.prof_btn {
+    /* border: 1px solid blue; */
+}
+.profile {
+    padding: 0;
+}
+.profile li {
+    display: inline;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.20);
+}
+.profile li:hover {
+    border: 1px solid #99cc00;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile a:hover {
+    text-decoration: none;
+}
+/*              */
+/* Зеленое меню */
+/*              */
+.lower {
+    background-color: #99cc00;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.Logo, .iphone, .table, .callback {
+    display: inline-block;
+    margin: 0 auto;
+}
+.Logo {
+    /* border: 1px solid rgb(255, 0, 149); */
+    position: relative;
+}
+.iphone {
+    /* border: 1px solid rgb(55, 0, 255); */
+    margin-right: 0;
+}
+.table {
+    /* border: 1px solid rgb(255, 174, 0); */
+    margin-left: 0;
+}
+.table td {
+    padding: 5px 10px;
+    font-size: 22px;
+    color: white;
+}
+.callback {
+    /* border: 1px solid rgb(0, 255, 221);*/
+}
+.callmebtn {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 10px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+}
+.callmebtn:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+    cursor: pointer;
+}
+.callmebtn:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+/*                */
+/* Черная полоска */
+/*                */
+.search {
+    z-index: 11;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    height: 60px;
+    align-items: center;
+    margin: 0;
+    display: flex;
+}
+.catalog, .search_bar, .basket, .basket-table {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+}
+/* Раскрывающийся каталог */
+.catalog_link {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+.catalog_link:hover, .catalog_link:focus {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.catalog_link i {
+    padding: 5px;
+    transform:translate(0,-4px)
+}
+.search_bar {
+    margin: 0;
+    width: 50%;
+    z-index: 0;
+}
+
+/* Строка поиска */
+.searchfield {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 0 12px;
+    z-index: 0;
+}
+/* Кнопка поиска */
+.findbtn {
+    position: relative;
+    float: right;
+    z-index: 1;
+    font-size: 17px;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 6px 30px;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 10px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+}
+.findbtn:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+    cursor: pointer;
+}
+.findbtn:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+.basket {
+    margin-right: 0;
+}
+.basket:hover {
+    filter: brightness(70%);
+}
+.basket-table  {
+    margin-left: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+}
+.basket-table a {
+    color: white;
+    font-size: 17px;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+}
+.basket-table a:hover {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+/*               */
+/* Товары недели */
+/*               */
+
+.product_container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.week-product {
+    /* border: red solid 1px; */
+}
+.week-product .title1, .week-product .prev_next{
+    justify-content: center;
+    margin: 40px 0;
+}
+.week-product h1 {
+    position: relative;
+    display: inline-block;
+    padding-top: 11px;
+}
+.prev_next {
+    position: relative;
+    float: right;
+}
+.prev_next i {
+    padding-top: 9px;
+}
+.previous {
+    margin-right: 20px;
+}
+.previous, .next {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ededed !important;
+}
+.product_carousel {
+    margin-top: 10px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.20);
+}
+.our-advantages {
+    /* border: rgb(47, 0, 255) solid 1px; */
+}
+
+
+
+.advantages_list {
+    list-style: none;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.20);
+    align-items: center;
+    display: flex;
+    
+}
+.advantages_list ul {
+    
+}
+.advantages_list img {    
+    /* border: rgb(47, 0, 255) solid 1px; */
+}
+.advantages_list li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+    /* border: solid 1px green; */
+    margin-left: 0;
+    font: 18px "Ubuntu", sans-serif;
+}
+
+
+
+
+
+.useful_articles {
+    /* border: red solid 1px; */
+}
+.useful_articles .title3, .useful_articles .prev_next3{
+    justify-content: center;
+    margin: 40px 0;
+}
+.useful_articles h1  {
+    position: relative;
+    display: inline-block;
+    padding-top: 11px;
+}
+.prev_next3 {
+    position: relative;
+    float: right;
+}
+.prev_next3 i {
+    padding-top: 9px;
+}
+.previous3 {
+    margin-right: 20px;
+}
+.previous3, .next3 {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ededed !important;
+}
+.article_carousel {
+    margin-top: 10px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.20);
+}
+.read_all {
+    
+}
+.read_btn {
+    margin: 50px 40% 50px 40%;
+    text-align: center;
+    font: 20px "Ubuntu", sans-serif;
+    padding: 10px 40px;    
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.20);
+}
+.info {
+    position: relative;
+    background-color: #99cc00;
+    margin: 0;    
+}
+.info h1{
+    color: white;
+    font-size: 40px;
+    margin: 0 0 0px 0;
+}
+.text {
+    position: relative;
+    padding: 50px 100px;
+    margin: 0px ;
+    font: 20px "Ubuntu", sans-serif;
+    color: white;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.footer_top {
+    font: 15px "Ubuntu", sans-serif ;
+    color: #c4c2c2;
+    align-items: center;
+    background-color: #333333;
+    display: flex;
+}
+.footer_top ul {
+    padding: 0;
+}
+.footer_top li {
+    padding: 10px;
+    list-style: none;
+    font: 15px "Ubuntu", sans-serif ;
+    color: #c4c2c2;
+}
+.footer_logo, .requisites, .footer_menu {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+.footer_logo {
+    /* border: solid 1px green; */
+}
+.requisites {
+    /* border: solid 1px red; */
+}
+.footer_menu {
+    /* border: solid 1px blue; */
+}
+.footer_menu li {
+    padding: 5px;
+}
+.footer_bottom {
+    height: 60px;
+    font: 15px "Ubuntu", sans-serif ;
+    color: #444444;
+    align-items: center;
+    display: flex;
+}
+.agreement, .privacy-policy, .social_links {
+    display: inline-block;
+    margin: 0 auto;
+}
+.agreement {
+    margin-left: 30px;
+}
+.social_links {
+    margin-right: 30px;
+}
+.logo_inst, .logo_FB, .logo_VK {
+    padding: 0 10px;
+    width: 30px;
+}
+.social_links ul {
+    padding: 0;
+}
+.social_links li {
+    display: inline;
+}
+
+
+
+
+
+

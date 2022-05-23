@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компания Успех, г.Кемерово</title>
+    <script src="https://kit.fontawesome.com/1cf17f5c00.js" crossorigin="anonymous"></script>
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href="font/ubuntu/ubuntu.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <header class="hat">
+        <div class="myheader">
+            <!-- Вкладки меню -->
+            <a onclick="cmenu_open()"><img src="images/menu_ico.png" alt="menu" class="cmenu_ico"/></a>
+            <div class="menu">
+                <ul>
+                    <a href="main.html">
+                        <li>Главная</li>
+                    </a>
+                    <a href="P&D.html">
+                        <li>Оплата и доставка</li>
+                    </a>
+                    <a href="Shops.html">
+                        <li>Магазины</li>
+                    </a>
+                    <a href="Consult.html">
+                        <li>Консультант садовода</li>
+                    </a>
+                    <a href="Help.html">
+                        <li>Помощь</li>
+                    </a>
+                    <a href="Discount.html">
+                        <li>Акции</li>
+                    </a>
+                    <a href="FAQ.html">
+                        <li>Вопросы</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- Профиль -->
+            <div class="prof_btn">
+                <ul class="profile">
+                    <li>
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        <a href="#">Вход</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Зеленое меню -->
+        <div class="lower">
+            <!-- Логотип -->
+            <div class="Logo">
+                <a href="#"><img src="images/logo2.png" alt="Логотип" class="logo"/></a>
+            </div>
+            <!-- Iphone -->
+            <div class="iphone">
+                <img src="images/iphone.png" alt="IPhone"/>
+                <!-- Реализовать на мобилах автоматическое открытие набора номера -->
+            </div>
+            <!-- Телефоны -->
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>Заказы, ОПТ</td>
+                        <td>(3842)</td>
+                        <td>28-35-00</td>
+                        <td>37-71-74</td>
+                    </tr>
+                    <tr>
+                        <td>РОЗНИЦА</td>
+                        <td>(3842)</td>
+                        <td>28-48-98</td>
+                        <td>28-42-37</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Перезвонить -->
+            <div class="callback">
+                <form>
+                    <input class="callmebtn" type="submit" value="Перезвоните мне!">
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Стока с поиском -->
+    <div class="search">
+        <div class="catalog">
+            <a class="catalog_link" onclick="catalog_menu_open()">Каталог <span>товаров</span>
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="search_bar">
+            <form>
+                <input type="text" name="name" placeholder="Введите название товара" class="searchfield">
+                <input type="submit" value="Найти" class="findbtn">
+            </form>
+        </div>
+        <div class="basket">
+            <a href="#"><img src="images/basket_ico.png" alt="Basket"></a>
+        </div>
+        <div class="basket-table">
+            <table class="">
+                <tr>
+                    <td><a href="#">0 р.</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Оформить заказ</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="product_container">
+        <div class="week-product">
+            <h1 class="title1">Товары недели</h1>
+            <div class="prev_next">
+                <a class="previous" role="button" aria-label="Previous slide"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                <a class="next" role="button" aria-label="Next slide"><i class="fa fa-angle-right fa-2x" aria-hidden="true" fa-3x></i></a>
+            </div>
+            <div class="product_carousel">
+
+            </div>
+        </div>
+        <div class="our-advantages">
+            <h1 class="title2">Наши преимущества</h1>
+            <ul class="advantages_list">
+                <img src="/Successful_site/images/checkmark.png" alt="checkmark" class="checkmark"/><li class="point">Только лучшие проверенные товары</li>
+                <img src="/Successful_site/images/checkmark.png" alt="checkmark" class="checkmark"/><li class="point">Высокое качество от производителей</li>
+                <img src="/Successful_site/images/checkmark.png" alt="checkmark" class="checkmark"/><li class="point">Обученный квалифицированный персонал</li>
+            </ul>
+        </div>
+        <div class="useful_articles">
+            <h1 class="title3">Полезные статьи</h1>
+            <div class="prev_next3">
+                <a class="previous3" role="button" aria-label="Previous slide"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></a>
+                <a class="next3" role="button" aria-label="Next slide"><i class="fa fa-angle-right fa-2x" aria-hidden="true" fa-3x></i></a>
+            </div>
+            <div class="article_carousel">
+
+            </div>
+        </div>
+    </div>
+    <div class="read_all">
+        <a href="Read-all.html"><div class="read_btn">Читать все</div></a>
+    </div>
+    <div class="info">
+        <div class="text">
+            <h1 class="foot_title">Товары для садоводов от компании Успех</h1>
+            <p>
+                Компания “Успех” является крупнейшим в Кузбассе поставщиком
+                товаров для садоводов. В зависимости от объемов для оптовых и
+                розничных покупателей предлагается гибкая система скидок и лучшие в
+                регионе цены на весь ассортимент товаров, осуществляется доставка.
+                <br><br>
+                Наша компания реализует семена всех известных агрофирм, а также
+                семена собственной фасовки по ценам производителя.
+                <br><br>
+                Все описания товаров базируются на основе информации с сайтов
+                производителей. Комплект поставки, характеристики и внешний вид
+                могут быть изменены производителем без предварительного
+                уведомления. При покупке уточняйте все значимые для Вас параметры,
+                комплектацию, внешний вид и срок гарантии у продавца.Вся
+                представленная информация на сайте приведена как справочная
+                информация и не является публичной офертой.
+            </p>
+        </div>    
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_logo">
+                <ul>
+                    <li><a href="#"><img src="images/logo2.png" alt="Логотип" class="foot_logo"/></a></li>
+                    <li>Компания Успех, г. Кемерово<br>
+                        1998 – 2020 г. Все права защищены</li>
+                </ul>
+            </div>
+            <div class="requisites">
+                <ul>
+                    <li>ИНН 420800180243<br>
+                    ОГРН №304420530300327</li>
+                    <li>Юридический адрес:<br>
+                    650024, г. Кемерово, ул.Глинки, 13<br>
+                    Почта для заказов:zakaz@uspehagro.ru</li>
+                </ul>
+            </div>
+            <div class="footer_menu">
+                <ul>
+                    <a href="P&D.html">
+                        <li>Оплата и доставка</li>
+                    </a>
+                    <a href="Shops.html">
+                        <li>Магазины</li>
+                    </a>
+                    <a href="Consult.html">
+                        <li>Консультант садовода</li>
+                    </a>
+                    <a href="Help.html">
+                        <li>Помощь</li>
+                    </a>
+                    <a href="Discount.html">
+                        <li>Акции</li>
+                    </a>
+                    <a href="FAQ.html">
+                        <li>Вопросы</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="agreement">
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="privacy-policy">
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="social_links">
+                <ul>
+                    <li><a href="#"><img src="/Successful_site/images/inst.png" alt="Instagram" class="logo_inst"/></a></li>
+                    <li><a href="#"><img src="/Successful_site/images/FB.png" alt="facebook" class="logo_FB"/></a></li>
+                    <li><a href="#"><img src="/Successful_site/images/VK.jpg" alt="VK" class="logo_VK"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

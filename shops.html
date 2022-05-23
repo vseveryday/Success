@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компания Успех, г.Кемерово</title>
+    <script src="https://kit.fontawesome.com/1cf17f5c00.js" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet"/>
+    <link href="font/ubuntu/ubuntu.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<header>
+    <div class="row">
+        <div class="col-1">qwqer</div>
+    </div>
+</header>
+<header class="header-container">
+    <div class="container">
+        <div class="header_menu">
+            <!-- Вкладки меню -->
+            <a onclick="cmenu_open()" class="cmenu_ico">&nbsp;</a>
+            <div class="top_menu">
+                <ul>
+                    <a href="index_.html">
+                        <li>Главная</li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li>Оплата и доставка</li>
+                    </a>
+                    <a href="#" class="btn btn-danger">
+                        <li>Магазины</li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li>Консультант садовода</li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li>Помощь</li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li>Акции</li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li>Вопросы</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- Профиль -->
+            <div class="prof">
+                <ul class="list1">
+                    <li>
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        <a href="#">Вход</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Зеленое меню -->
+    <div class="second_menu">
+
+        <!-- Логотип -->
+        <div class="Logo">
+            <a href="#"><img src="images/logo_copy.png" alt="Логотип" class="logo"/></a>
+        </div>
+        <!-- Iphone -->
+        <div class="iphone">
+            <img src="images/iphone.png" alt="IPhone"/>
+            <!-- Реализовать на мобилах автоматическое открытие набора номера -->
+        </div>
+        <!-- Телефоны -->
+        <div class="table">
+            <table>
+                <tr>
+                    <td>Заказы, ОПТ</td>
+                    <td>(3842)</td>
+                    <td>28-35-00</td>
+                    <td>37-71-74</td>
+                </tr>
+                <tr>
+                    <td>РОЗНИЦА</td>
+                    <td>(3842)</td>
+                    <td>28-48-98</td>
+                    <td>28-42-37</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Перезвонить -->
+        <div class="callback">
+            <form>
+                <input class="callmebtn" type="submit" value="Перезвоните мне!">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Стока с поиском -->
+    <div class="third_menu">
+        <div class="catalog">
+            <a class="catalog_link" onclick="catalog_menu_open()">Каталог товаров
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+            </a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" name="name" placeholder="Введите название товара" class="searchfield">
+                <input type="submit" value="Найти" class="findbtn">
+            </form>
+        </div>
+        <div class="basket">
+            <a href="/"><img src="/Successful_site/images/basket_ico.png" alt="Basket"></a>
+        </div>
+        <div class="basket-table">
+            <table class="">
+                <tr>
+                    <td><a href="#">0 р.</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Оформить заказ</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</header>
+<div class="product_container" style="border: 1px solid red">
+    <div class="week-product">
+        <h1 class="title1">Товары недели</h1>
+        <div class="prev_next">
+            <a class="previous" role="button" aria-label="Previous slide"><i class="fa fa-angle-left fa-2x"
+                                                                             aria-hidden="true"></i></a>
+            <a class="next" role="button" aria-label="Next slide"><i class="fa fa-angle-right fa-2x" aria-hidden="true"
+                                                                     fa-3x></i></a>
+        </div>
+    </div>
+    <div class="our-advantages">
+        <h1 class="title2">Наши преимущества</h1>
+        <ul class="advantages_list">
+            <li class="point">Только лучшие проверенные товары</li>
+            <li class="point">Высокое качество от производителей</li>
+            <li class="point">Обученный квалифицированный персонал</li>
+        </ul>
+    </div>
+    <div class="useful_articles" style="position: sticky; top: 15px;border: 1px solid blue">
+        <h1 class="title3">Полезные статьи</h1>
+        <div class="prev_next3">
+            <a class="previous3" role="button" aria-label="Previous slide"><i class="fa fa-angle-left fa-2x"
+                                                                              aria-hidden="true"></i></a>
+            <a class="next3" role="button" aria-label="Next slide"><i class="fa fa-angle-right fa-2x" aria-hidden="true"
+                                                                      fa-3x></i></a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
